@@ -18,8 +18,8 @@ services:
       - "3001:3001"
     volumes:
       - type: bind
-        source: /C
-        target: /C
+        source: /Users/malhadeff/Development/Codaclean/
+        target: /opt/codaclean/
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
@@ -56,8 +56,8 @@ services:
     volumes:
       - ./tmp/localstack:/tmp/localstack
       - type: bind
-        source: /C
-        target: /C
+        source: /Users/malhadeff/Development/Codaclean/
+        target: /opt/codaclean/
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
